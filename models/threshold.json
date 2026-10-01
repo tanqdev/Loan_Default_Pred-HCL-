@@ -1,0 +1,4 @@
+{
+    "threshold": 0.2,
+    "selection_method": "Maximum F1 on validation data"
+}

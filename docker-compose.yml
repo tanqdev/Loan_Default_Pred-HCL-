@@ -1,0 +1,22 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: loan-default-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    container_name: loan-default-frontend
+    ports:
+      - "8501:8501"
+    environment:
+      API_URL: http://backend:8000
+    depends_on:
+      - backend

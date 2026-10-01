@@ -1,9 +1,0 @@
-Title
-Purpose
-tech stack- frontend, backend, database
-System Architecture- 
-Frontend Pages/Views
-Database schema
-API Endpoints
-summary
-Conclusion
